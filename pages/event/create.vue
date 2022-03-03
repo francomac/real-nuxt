@@ -14,12 +14,10 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content:  'where you can create an event taking place'
-
-        }
-
-      ]
+          content: 'where you can create an event taking place',
+        },
+      ],
     }
-  }
+  },
 }
 </script>

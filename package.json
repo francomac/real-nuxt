@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "nuxt": "nuxt",
+    "json-server": "json-server --watch db.json --port 3001 --delay 1000",
     "dev": "concurrently \"nuxt\" \"npm run json-server\"",
     "build": "nuxt build",
     "start": "nuxt start",
@@ -10,8 +12,7 @@
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
     "lint:prettier": "prettier --check .",
     "lint": "npm run lint:js && npm run lint:prettier",
-    "lintfix": "prettier --write --list-different . && npm run lint:js -- --fix",
-    "json-server": "json-server --watch db.json --port 3001"
+    "lintfix": "prettier --write --list-different . && npm run lint:js -- --fix"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",

@@ -19,10 +19,10 @@ export default {
   },
   async asyncData({ $axios, error }) {
     try {
-      const response = await $axios.get('http://localhost:3001/events')
+      const { data } = await $axios.get('http://localhost:3001/events')
 
       return {
-        events: response.data,
+        events: data,
       }
     } catch (e) {
       error({
